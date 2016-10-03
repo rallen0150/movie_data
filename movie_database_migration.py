@@ -69,7 +69,7 @@ create_table_command = """
 CREATE TABLE user_info(
     user_id INT REFERENCES user_data(user_id),
     item_id INT REFERENCES movie_data(movie_id),
-    ratings INT,
+    rating INT,
     time_stamp INT
 );
 """
