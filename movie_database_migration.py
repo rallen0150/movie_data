@@ -64,6 +64,7 @@ with open ("movie_item.csv") as open_file:
 connection.commit()
 
 cursor.execute("DROP TABLE IF EXISTS user_info;")
+
 create_table_command = """
 CREATE TABLE user_info(
     user_id INT REFERENCES user_data(user_id),
